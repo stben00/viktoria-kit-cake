@@ -1210,6 +1210,56 @@ header.nav{
 .lightbox .lb-prev{left:24px}
 .lightbox .lb-next{right:24px}
 
+.video-showcase{
+  margin-top:56px;
+}
+.video-card{
+  background:var(--milk);
+  border:1px solid var(--line);
+  border-radius:var(--radius-xl);
+  overflow:hidden;
+  box-shadow:var(--shadow-1);
+}
+.video-copy{
+  padding:clamp(24px,4vw,38px) clamp(22px,4vw,42px) 0;
+  max-width:760px;
+}
+.video-copy .eyebrow{margin-bottom:12px}
+.video-copy h3{
+  margin:0;
+  font-family:var(--font-serif);
+  font-weight:300;
+  font-size:clamp(30px,4vw,50px);
+  line-height:1.05;
+  color:var(--choco);
+}
+.video-copy h3 em{
+  font-family:var(--font-script);
+  font-style:italic;
+  color:var(--rose);
+}
+.video-copy p{
+  margin:16px 0 0;
+  color:var(--mocha);
+  line-height:1.65;
+  font-size:15.5px;
+}
+.youtube-frame{
+  position:relative;
+  aspect-ratio:16 / 9;
+  margin:clamp(22px,4vw,34px);
+  border-radius:calc(var(--radius-xl) - 10px);
+  overflow:hidden;
+  background:#1f1611;
+}
+.youtube-frame iframe{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  border:0;
+}
+
 /* ====================================================================
    INSTAGRAM CONVERSION
 ==================================================================== */
@@ -3657,6 +3707,27 @@ body:not(.loaded) .hero{ visibility:hidden }
   </div>
 </section>
 
+<!-- ============ VIDEO ============ -->
+<section class="video-showcase" aria-labelledby="studio-video-title">
+  <div class="wrap">
+    <div class="video-card reveal">
+      <div class="video-copy">
+        <span class="eyebrow" data-t="video.eyebrow">Video · YouTube</span>
+        <h3 id="studio-video-title" data-t-html="video.title">Zobacz naszą <em>pracownię</em> w ruchu.</h3>
+        <p data-t="video.lede">Krótki film z procesu i detali, które tworzą klimat tortów Viktoria Kit Cake.</p>
+      </div>
+      <div class="youtube-frame">
+        <iframe
+          src="https://www.youtube.com/embed/L8KGr0wIbbU"
+          title="Viktoria Kit Cake YouTube video"
+          loading="lazy"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- LIGHTBOX -->
 <div class="lightbox" id="lightbox" aria-hidden="true">
   <button class="lb-close" id="lbClose" aria-label="Close">
@@ -4499,6 +4570,9 @@ const I18N = {
     'gal.lede': 'Wybór z naszego Instagrama — odtworzymy każdy projekt lub stworzymy zupełnie nowy. Pełne archiwum na @viktoria_kit_cake.',
     'gal.tabAll': 'Wszystkie', 'gal.tabBento': 'Bento', 'gal.tabBday': 'Urodzinowe',
     'gal.tabWedding': 'Weselne & chrzciny', 'gal.tabKids': 'Dziecięce', 'gal.tabDessert': 'Kapkejki & boxy',
+    'video.eyebrow': 'Video · YouTube',
+    'video.title': 'Zobacz naszą <em>pracownię</em> w ruchu.',
+    'video.lede': 'Krótki film z procesu i detali, które tworzą klimat tortów Viktoria Kit Cake.',
     'ig.eyebrow': 'Cześć z Instagrama',
     'ig.title': 'Widziałaś coś u nas <em>na feedzie</em>? Upieczemy.',
     'ig.lede': 'Prześlij screenshot, pin z Pinteresta, zapisany Reel, kolor który ci się podoba. Odpowiemy w kilka godzin z wyceną, terminem i pomysłami, jak zrobić to jeszcze lepiej. Mówimy po PL · UA · EN.',
@@ -4748,6 +4822,9 @@ const I18N = {
     'gal.lede': 'Підбірка з нашого Instagram — відтворимо будь-який проєкт або створимо абсолютно новий. Повний архів на @viktoria_kit_cake.',
     'gal.tabAll': 'Усі', 'gal.tabBento': 'Бенто', 'gal.tabBday': 'Святкові',
     'gal.tabWedding': 'Весільні & хрещення', 'gal.tabKids': 'Дитячі', 'gal.tabDessert': 'Капкейки & бокси',
+    'video.eyebrow': 'Відео · YouTube',
+    'video.title': 'Подивіться нашу <em>студію</em> в русі.',
+    'video.lede': 'Коротке відео про процес і деталі, які створюють настрій тортів Viktoria Kit Cake.',
     'ig.eyebrow': 'Привіт з Instagram',
     'ig.title': 'Бачила щось у нас <em>у стрічці</em>? Спечемо.',
     'ig.lede': 'Надішли скріншот, пін з Pinterest, збережений Reel, колір що тобі подобається. Відповімо за кілька годин з ціною, термінами та ідеями, як зробити це ще краще. Спілкуємось PL · UA · EN.',
@@ -4995,6 +5072,9 @@ const I18N = {
     'gal.lede': 'A selection from our Instagram — we can recreate any project or design something brand new. Full archive at @viktoria_kit_cake.',
     'gal.tabAll': 'All', 'gal.tabBento': 'Bento', 'gal.tabBday': 'Birthday',
     'gal.tabWedding': 'Wedding & christening', 'gal.tabKids': 'Kids', 'gal.tabDessert': 'Cupcakes & boxes',
+    'video.eyebrow': 'Video · YouTube',
+    'video.title': 'See our <em>studio</em> in motion.',
+    'video.lede': 'A short film with the process and details that shape the mood of Viktoria Kit Cake.',
     'ig.eyebrow': 'Hi from Instagram',
     'ig.title': 'Saw something on our <em>feed</em>? We\'ll bake it.',
     'ig.lede': 'Send a screenshot, a Pinterest pin, a saved Reel, a color you love. We\'ll reply within hours with a quote, timing and ideas to make it even better. We chat PL · UA · EN.',
