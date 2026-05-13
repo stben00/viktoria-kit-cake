@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-label="Honey cake">
+  <defs>
+    <radialGradient id="bg" cx="35%" cy="28%" r="75%">
+      <stop offset="0" stop-color="#e6bd71"/>
+      <stop offset="1" stop-color="#8f5b2d"/>
+    </radialGradient>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="10" flood-color="#3b2218" flood-opacity=".22"/>
+    </filter>
+    <linearGradient id="shine" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fffaf3" stop-opacity=".9"/>
+      <stop offset="1" stop-color="#fffaf3" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect width="240" height="240" rx="120" fill="url(#bg)"/>
+  <circle cx="58" cy="48" r="42" fill="url(#shine)" opacity=".38"/>
+  <g filter="url(#soft)">
+  <rect x="61" y="83" width="116" height="88" rx="18" fill="#b8783c"/>
+  <path d="M65 104h107M66 128h108M68 151h105" stroke="#f5dfad" stroke-width="9" stroke-linecap="round"/>
+  <path d="M88 71c28 14 59 14 88 0" fill="none" stroke="#ffd275" stroke-width="13" stroke-linecap="round"/>
+  <path d="M178 67c0 22-8 28-16 28s-16-6-16-28c0-15 16-37 16-37s16 22 16 37z" fill="#f2a83a"/>
+</g>
+  <circle cx="120" cy="120" r="112" fill="none" stroke="#fff8f0" stroke-opacity=".55" stroke-width="6"/>
+</svg>
