@@ -24,3 +24,11 @@ Upload the repository to GitHub Pages, Netlify, Vercel, or any static hosting.
 Recommended demo links:
 - `/index.html` — client-facing website
 - `/pitch.html` — sales page to show the website as a portfolio case
+
+
+## Links
+
+- Main site: https://stben00.github.io/viktoria-kit-cake/index.html
+- Telegram showroom: https://stben00.github.io/viktoria-kit-cake/telegram.html
+- Premium dashboard: https://stben00.github.io/viktoria-kit-cake/dashboard.html
+- Pitch page: https://stben00.github.io/viktoria-kit-cake/pitch.html

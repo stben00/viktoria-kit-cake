@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+<title>Viktoria Kit Cake — Premium Dashboard</title>
+<meta name="description" content="Красивый dashboard для сайта Viktoria Kit Cake: ссылки, Telegram, продажи, контент-план и проверки сайта." />
+<meta name="theme-color" content="#25140f" />
+<meta property="og:title" content="Viktoria Kit Cake — Premium Dashboard" />
+<meta property="og:description" content="Панель управления ссылками, Telegram и продажами для премиального сайта тортов." />
+<meta property="og:image" content="https://stben00.github.io/viktoria-kit-cake/img/viktoria_hero.jpg" />
+<style>
+:root{--bg:#120b08;--panel:#1d120e;--panel2:#251711;--cream:#fff7ec;--muted:#c8ab98;--line:rgba(255,247,236,.12);--gold:#d9bd93;--rose:#c48a7d;--green:#46d37b;--blue:#229ED9;--red:#ff7f7a;--shadow:0 30px 120px -50px rgba(0,0,0,.75)}
+*{box-sizing:border-box}body{margin:0;font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--cream);background:radial-gradient(circle at 12% 0%,rgba(196,138,125,.22),transparent 28%),radial-gradient(circle at 85% 12%,rgba(217,189,147,.16),transparent 24%),linear-gradient(180deg,#120b08,#1b100c 45%,#0f0907);min-height:100vh}a{color:inherit;text-decoration:none}.shell{width:min(1480px,100%);margin:0 auto;padding:24px}.nav{display:flex;align-items:center;justify-content:space-between;gap:18px;margin-bottom:24px}.brand{display:flex;align-items:center;gap:14px}.mark{width:52px;height:52px;border-radius:18px;background:linear-gradient(145deg,#fff4de,#8e5c4f);display:grid;place-items:center;color:#301a12;font:italic 700 28px Georgia,serif;box-shadow:0 16px 40px -18px var(--rose)}.brand h1{margin:0;font:500 24px/1 Georgia,serif}.brand p{margin:5px 0 0;color:var(--muted);font-size:12px;letter-spacing:.18em;text-transform:uppercase}.nav-actions{display:flex;gap:10px;flex-wrap:wrap}.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:12px 15px;border-radius:14px;background:rgba(255,247,236,.08);border:1px solid var(--line);color:var(--cream);font-weight:700;font-size:13px;transition:.22s}.btn:hover{transform:translateY(-2px);background:rgba(255,247,236,.13)}.btn.gold{background:linear-gradient(135deg,#d9bd93,#a86a60);border:0;color:#2a1711}.btn.tg{background:var(--blue);border:0}.grid{display:grid;grid-template-columns:1.25fr .75fr;gap:18px}.hero{position:relative;overflow:hidden;border-radius:34px;background:linear-gradient(140deg,rgba(255,247,236,.12),rgba(255,247,236,.04));border:1px solid var(--line);box-shadow:var(--shadow);padding:34px;min-height:360px}.hero:before{content:"";position:absolute;inset:0;background:url('img/viktoria_hero.jpg') center/cover;opacity:.22;filter:saturate(1.08)}.hero>*{position:relative;z-index:1}.eyebrow{display:inline-flex;gap:10px;align-items:center;padding:9px 12px;border:1px solid var(--line);border-radius:999px;color:var(--muted);font-size:11px;letter-spacing:.2em;text-transform:uppercase;background:rgba(18,11,8,.35);backdrop-filter:blur(12px)}.hero h2{font:400 clamp(46px,7vw,88px)/.86 Georgia,serif;letter-spacing:-.065em;max-width:820px;margin:24px 0 18px}.hero h2 em{font-style:italic;color:#e6b9ae}.hero p{max-width:720px;color:var(--muted);font-size:17px;line-height:1.65}.metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:26px}.metric{padding:18px;border-radius:22px;background:rgba(255,247,236,.08);border:1px solid var(--line)}.metric b{display:block;font:500 34px/1 Georgia,serif}.metric span{display:block;margin-top:8px;color:var(--muted);font-size:12px}.panel{border-radius:30px;padding:24px;background:linear-gradient(180deg,rgba(255,247,236,.1),rgba(255,247,236,.05));border:1px solid var(--line);box-shadow:0 24px 80px -56px rgba(0,0,0,.8)}.panel h3{font:500 26px/1.1 Georgia,serif;margin:0 0 16px}.status{display:grid;gap:10px}.check{display:flex;justify-content:space-between;gap:12px;padding:13px;border-radius:16px;background:rgba(255,247,236,.06);border:1px solid var(--line);color:var(--muted);font-size:14px}.check strong{color:var(--cream)}.ok{color:var(--green);font-weight:900}.warn{color:var(--gold);font-weight:900}.main{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:18px}.card{border-radius:30px;padding:24px;background:rgba(255,247,236,.075);border:1px solid var(--line);min-height:250px;position:relative;overflow:hidden}.card:after{content:"";position:absolute;width:180px;height:180px;border-radius:50%;right:-80px;bottom:-90px;background:radial-gradient(circle,rgba(217,189,147,.18),transparent 70%)}.card h3{font:500 25px/1.05 Georgia,serif;margin:0 0 14px;position:relative;z-index:1}.card p,.card li{color:var(--muted);line-height:1.62;font-size:14px}.links{display:grid;gap:10px;position:relative;z-index:1}.link{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:13px 14px;border-radius:16px;background:rgba(255,247,236,.07);border:1px solid var(--line);font-weight:700}.link span{color:var(--muted);font-size:12px}.pipeline{display:grid;gap:10px}.lead{display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:12px;padding:12px;border-radius:18px;background:rgba(255,247,236,.06);border:1px solid var(--line)}.dot{width:12px;height:12px;border-radius:50%;background:var(--gold);box-shadow:0 0 0 6px rgba(217,189,147,.08)}.lead b{font-size:14px}.lead small{display:block;color:var(--muted);margin-top:2px}.tag{border-radius:999px;padding:6px 9px;background:rgba(70,211,123,.12);color:var(--green);font-size:11px;font-weight:900}.board{margin-top:18px;display:grid;grid-template-columns:1fr 1fr;gap:18px}.task{display:flex;align-items:flex-start;gap:12px;padding:13px;border-radius:18px;background:rgba(255,247,236,.06);border:1px solid var(--line);margin-top:10px;cursor:pointer}.task input{accent-color:var(--gold);margin-top:3px}.task span{color:var(--muted);font-size:14px;line-height:1.5}.copybox{width:100%;min-height:128px;border-radius:20px;border:1px solid var(--line);background:rgba(0,0,0,.2);color:var(--cream);padding:14px;font:500 14px/1.55 ui-monospace,SFMono-Regular,Menlo,monospace;resize:none}.toast{position:fixed;left:50%;bottom:22px;transform:translateX(-50%) translateY(20px);background:#fff7ec;color:#1d120e;padding:13px 18px;border-radius:999px;font-weight:900;opacity:0;pointer-events:none;transition:.24s}.toast.show{opacity:1;transform:translateX(-50%) translateY(0)}@media(max-width:1100px){.grid,.main,.board{grid-template-columns:1fr}.metrics{grid-template-columns:repeat(2,1fr)}}@media(max-width:640px){.shell{padding:14px}.nav{align-items:flex-start}.nav-actions{width:100%}.btn{flex:1}.hero{padding:22px;border-radius:26px}.hero h2{font-size:52px}.metrics{grid-template-columns:1fr}.brand h1{font-size:20px}}
+</style>
+</head>
+<body>
+<div class="shell">
+  <header class="nav">
+    <a class="brand" href="index.html"><span class="mark">V</span><span><h1>Viktoria Kit Cake</h1><p>premium dashboard</p></span></a>
+    <nav class="nav-actions">
+      <a class="btn" href="index.html">Сайт</a>
+      <a class="btn" href="telegram.html">Telegram view</a>
+      <a class="btn tg" href="https://t.me/viktoria_kit_cake">Telegram</a>
+      <a class="btn gold" href="pitch.html">Pitch</a>
+    </nav>
+  </header>
+
+  <section class="grid">
+    <div class="hero">
+      <span class="eyebrow">live control room · GitHub Pages</span>
+      <h2>Панель, чтобы быстро показывать, продавать и вести заявки.</h2>
+      <p>Это не техническая админка с паролями, а красивая презентационная dashboard-страница: ссылки, Telegram, чек-лист сайта, заготовки сообщений, идеи контента и структура продаж.</p>
+      <div class="metrics">
+        <div class="metric"><b>3</b><span>языка на сайте</span></div>
+        <div class="metric"><b>12</b><span>вкусов с визуалами</span></div>
+        <div class="metric"><b>24h</b><span>быстрый ответ</span></div>
+        <div class="metric"><b>Live</b><span>GitHub Pages</span></div>
+      </div>
+    </div>
+    <aside class="panel">
+      <h3>Проверка сайта</h3>
+      <div class="status">
+        <div class="check"><strong>Главная страница</strong><span class="ok">OK</span></div>
+        <div class="check"><strong>Telegram preview</strong><span class="ok">OK</span></div>
+        <div class="check"><strong>Форма заявки</strong><span class="warn">static</span></div>
+        <div class="check"><strong>Реальные отзывы/видео</strong><span class="warn">нужно позже</span></div>
+        <div class="check"><strong>Оптимизация веса HTML</strong><span class="warn">можно улучшить</span></div>
+      </div>
+    </aside>
+  </section>
+
+  <section class="main">
+    <article class="card">
+      <h3>Быстрые ссылки</h3>
+      <div class="links">
+        <a class="link" href="https://stben00.github.io/viktoria-kit-cake/index.html">Основной сайт <span>open</span></a>
+        <a class="link" href="https://stben00.github.io/viktoria-kit-cake/telegram.html">Telegram landing <span>open</span></a>
+        <a class="link" href="https://stben00.github.io/viktoria-kit-cake/pitch.html">Pitch page <span>open</span></a>
+        <a class="link" href="https://github.com/stben00/viktoria-kit-cake">GitHub repo <span>code</span></a>
+      </div>
+    </article>
+    <article class="card">
+      <h3>Telegram sales kit</h3>
+      <p>Ссылка для отправки клиентам в Telegram:</p>
+      <textarea class="copybox" id="tgText" readonly>Viktoria Kit Cake — торты на заказ в Варшаве 🎂
+Посмотреть быстро в Telegram: https://stben00.github.io/viktoria-kit-cake/telegram.html
+Полный сайт: https://stben00.github.io/viktoria-kit-cake/index.html</textarea>
+      <div class="links" style="margin-top:10px">
+        <button class="link" type="button" id="copyTg">Скопировать текст <span>copy</span></button>
+        <a class="link" href="https://t.me/share/url?url=https%3A%2F%2Fstben00.github.io%2Fviktoria-kit-cake%2Ftelegram.html&text=Viktoria%20Kit%20Cake%20%E2%80%94%20%D1%82%D0%BE%D1%80%D1%82%D1%8B%20%D0%BD%D0%B0%20%D0%B7%D0%B0%D0%BA%D0%B0%D0%B7">Поделиться в Telegram <span>send</span></a>
+      </div>
+    </article>
+    <article class="card">
+      <h3>Заявки — пример</h3>
+      <div class="pipeline">
+        <div class="lead"><span class="dot"></span><span><b>Bento на день рождения</b><small>Telegram · нужна дата</small></span><span class="tag">new</span></div>
+        <div class="lead"><span class="dot"></span><span><b>Wedding cake</b><small>Instagram · 45 гостей</small></span><span class="tag">quote</span></div>
+        <div class="lead"><span class="dot"></span><span><b>Cupcake box</b><small>WhatsApp · корпоратив</small></span><span class="tag">paid</span></div>
+      </div>
+    </article>
+  </section>
+
+  <section class="board">
+    <article class="panel">
+      <h3>Что улучшать дальше</h3>
+      <label class="task"><input type="checkbox" data-task="reviews"><span><b>Реальные отзывы с фото.</b><br>3–5 клиенток + селфи/сторис дадут больше доверия, чем любая анимация.</span></label>
+      <label class="task"><input type="checkbox" data-task="video"><span><b>Видео 8–15 секунд в hero.</b><br>Крем, шпатель, упаковка — сильно поднимает ощущение premium.</span></label>
+      <label class="task"><input type="checkbox" data-task="speed"><span><b>Оптимизировать вес index.html.</b><br>Вынести base64-фото в отдельные JPG/WebP, чтобы сайт грузился легче.</span></label>
+    </article>
+    <article class="panel">
+      <h3>Контент-план</h3>
+      <div class="task"><span>Пн: Bento cake close-up + цена “od 95 zł”.</span></div>
+      <div class="task"><span>Ср: Reels “как собирается торт” 10 секунд.</span></div>
+      <div class="task"><span>Пт: Отзыв клиента + фото торта на празднике.</span></div>
+      <div class="task"><span>Вс: Карусель вкусов: Oreo / Pistachio / Mango.</span></div>
+    </article>
+  </section>
+</div>
+<div class="toast" id="toast">Скопировано</div>
+<script>
+const saved=JSON.parse(localStorage.getItem('vkc.dashboard.tasks')||'{}');
+document.querySelectorAll('[data-task]').forEach(i=>{i.checked=!!saved[i.dataset.task];i.addEventListener('change',()=>{saved[i.dataset.task]=i.checked;localStorage.setItem('vkc.dashboard.tasks',JSON.stringify(saved));});});
+document.getElementById('copyTg')?.addEventListener('click',async()=>{const txt=document.getElementById('tgText').value;try{await navigator.clipboard.writeText(txt);const t=document.getElementById('toast');t.classList.add('show');setTimeout(()=>t.classList.remove('show'),1700)}catch(e){alert(txt)}});
+</script>
+</body>
+</html>
